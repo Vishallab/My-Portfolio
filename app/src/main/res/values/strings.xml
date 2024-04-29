@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Vishal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="my_bio">Student 👨‍🎓 | Learner  | Creative Web and App Design 📱 | Tech Enthusiast 🖥️ | Aspiring Software Developer | currently learnimg Android App Devlopment 🎯 </string>
+    <string name="summery">
+As a final semester BCA student, I\'ve honed my skills in C, C++, and web &amp; App design through both college coursework and online certifications. My goal is to land an entry-level position in a vibrant organization where I can apply my technical and leadership acumen to propel the company . My passion lies in software development, and I\'m enthusiastic about seizing challenging opportunities . With a solid foundation and a hunger for growth.
+</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

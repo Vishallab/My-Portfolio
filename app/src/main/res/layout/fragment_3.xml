@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mainbg"
+    tools:context=".Fragment1">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <ImageView
+                android:id="@+id/computer"
+                android:layout_width="376dp"
+                android:layout_height="346dp"
+                android:layout_marginTop="-50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="268dp"
+                android:text="SKILLS"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="38dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView6"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/skills" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/infoholder"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:id="@+id/PL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Programming Language"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <TextView
+                        android:id="@+id/PLDetail"
+                        android:layout_width="99dp"
+                        android:layout_height="62dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="C \nC++ \nJava(basic)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/PL"
+                        app:layout_constraintTop_toBottomOf="@+id/PL"
+                        app:layout_constraintVertical_bias="0.571" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-80dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/circle_white_top" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/infoholder"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:id="@+id/AD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="App Development"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.031"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.096" />
+
+                    <TextView
+                        android:id="@+id/ADDetail"
+                        android:layout_width="124dp"
+                        android:layout_height="69dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Android Studio \n Java, XML"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/AD"
+                        app:layout_constraintTop_toBottomOf="@+id/AD"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:layout_width="347dp"
+                        android:layout_height="135dp"
+                        android:layout_marginEnd="-80dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/circle_white_top" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/infoholder"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:id="@+id/WD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Web Development"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/WDDetail"
+                        android:layout_width="152dp"
+                        android:layout_height="68dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="HTML \n CSS \n Java Script(basic)"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/WD"
+                        app:layout_constraintTop_toBottomOf="@+id/WD"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-80dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/circle_white_top" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/infoholder"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:id="@+id/SS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Soft Skills"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.023"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.112" />
+
+                    <TextView
+                        android:id="@+id/SSDetails"
+                        android:layout_width="271dp"
+                        android:layout_height="77dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Quick Learner \t\t\t\t\t\t\tCreativity \nCommunication\t\t\t\t\t\tTeam Player \nTime Management\t\t\t\Adaptibility"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/SS"
+                        app:layout_constraintTop_toBottomOf="@+id/SS"
+                        app:layout_constraintVertical_bias="0.571" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-80dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/circle_white_top" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/infoholder"
+                    android:elevation="10dp">
+
+                    <TextView
+                        android:id="@+id/SA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Software Applicatons"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
+
+                    <TextView
+                        android:id="@+id/SADetail"
+                        android:layout_width="313dp"
+                        android:layout_height="115dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Android Studio \t\t\t\t\tVS Code \nCanva \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFigma\nGit &amp; GitHub\nMicrosoft Office (Word, Excel, PowerPoint) "
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/SA"
+                        app:layout_constraintTop_toBottomOf="@+id/SA"
+                        app:layout_constraintVertical_bias="0.571" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-80dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/circle_white_top" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
